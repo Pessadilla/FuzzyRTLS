@@ -17,8 +17,8 @@
 #ifndef FL_VARIABLE_H
 #define FL_VARIABLE_H
 
-#include "fl/fuzzylite.h"
-#include "fl/defuzzifier/Centroid.h"
+#include "src/Functions/fl/fuzzylite.h"
+#include "src/Functions/fl/defuzzifier/Centroid.h"
 
 #include <string>
 #include <vector>

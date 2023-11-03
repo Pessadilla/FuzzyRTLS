@@ -17,9 +17,9 @@
 #ifndef FL_HEDGE_H
 #define FL_HEDGE_H
 
-#include "fl/fuzzylite.h"
+#include "src/Functions/fl/fuzzylite.h"
 
-#include "fl/Complexity.h"
+#include "src/Functions/fl/Complexity.h"
 
 #include <string>
 

@@ -17,7 +17,7 @@
 #ifndef FL_NILPOTENTMAXIMUM_H
 #define FL_NILPOTENTMAXIMUM_H
 
-#include "fl/norm/SNorm.h"
+#include "src/Functions/fl/norm/SNorm.h"
 
 namespace fl {
 

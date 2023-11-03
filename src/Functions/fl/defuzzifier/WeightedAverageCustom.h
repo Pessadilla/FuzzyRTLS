@@ -17,7 +17,7 @@
 #ifndef FL_WEIGHTEDAVERAGECUSTOM_H
 #define FL_WEIGHTEDAVERAGECUSTOM_H
 
-#include "fl/defuzzifier/WeightedDefuzzifier.h"
+#include "src/Functions/fl/defuzzifier/WeightedDefuzzifier.h"
 
 namespace fl {
     class Activated;

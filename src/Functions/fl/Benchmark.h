@@ -17,10 +17,10 @@
 #ifndef FL_BENCHMARK_H
 #define FL_BENCHMARK_H
 
-#include "fl/fuzzylite.h"
+#include "src/Functions/fl/fuzzylite.h"
 
-#include "fl/Complexity.h"
-#include "fl/imex/FldExporter.h"
+#include "src/Functions/fl/Complexity.h"
+#include "src/Functions/fl/imex/FldExporter.h"
 
 #include <string>
 #include <vector>

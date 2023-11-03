@@ -17,7 +17,7 @@
 #ifndef FL_EINSTEINPRODUCT_H
 #define FL_EINSTEINPRODUCT_H
 
-#include "fl/norm/TNorm.h"
+#include "src/Functions/fl/norm/TNorm.h"
 
 namespace fl {
 

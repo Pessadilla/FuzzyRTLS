@@ -17,7 +17,7 @@
 #ifndef FL_PROPORTIONAL_H
 #define FL_PROPORTIONAL_H
 
-#include "fl/activation/Activation.h"
+#include "src/Functions/fl/activation/Activation.h"
 
 namespace fl {
 

@@ -17,12 +17,12 @@
 #ifndef FL_OUTPUTVARIABLE_H
 #define FL_OUTPUTVARIABLE_H
 
-#include "fl/variable/Variable.h"
+#include "src/Functions/fl/variable/Variable.h"
 
-#include "fl/term/Activated.h"
-#include "fl/term/Aggregated.h"
+#include "src/Functions/fl/term/Activated.h"
+#include "src/Functions/fl/term/Aggregated.h"
 
-#include "fl/defuzzifier/Defuzzifier.h"
+#include "src/Functions/fl/defuzzifier/Defuzzifier.h"
 
 namespace fl {
 

@@ -8,6 +8,8 @@
 #include "import_qml_components_plugins.h"
 #include "import_qml_plugins.h"
 
+#include "Functions/findcoordinate.h"
+
 int main(int argc, char *argv[])
 {
     set_qt_environment();
@@ -28,6 +30,14 @@ int main(int argc, char *argv[])
     engine.addImportPath(":/");
 
     engine.load(url);
+
+    double x1 = 0.0, y1 = 0.0, r1 = 6.26; // İlk çember
+    double x2 = 5.0, y2 = 10.0, r2 = 6.56; // İkinci çember
+    double x3 = 10.0, y3 = 5.0, r3 = 5.52; // Üçüncü çember
+
+
+
+    FindCoordinate(x1,y1,r1,x2,y2,r2,x3,y3,r3);
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

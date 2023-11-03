@@ -17,7 +17,7 @@
 #ifndef FL_SPIKE_H
 #define FL_SPIKE_H
 
-#include "fl/term/Term.h"
+#include "src/Functions/fl/term/Term.h"
 
 namespace fl {
 

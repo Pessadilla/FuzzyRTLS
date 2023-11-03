@@ -17,10 +17,10 @@
 #ifndef FL_RULEBLOCK_H
 #define FL_RULEBLOCK_H
 
-#include "fl/fuzzylite.h"
+#include "src/Functions/fl/fuzzylite.h"
 
-#include "fl/activation/Activation.h"
-#include "fl/Complexity.h"
+#include "src/Functions/fl/activation/Activation.h"
+#include "src/Functions/fl/Complexity.h"
 
 #include <string>
 #include <vector>

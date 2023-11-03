@@ -17,7 +17,7 @@
 #ifndef FL_WEIGHTEDDEFUZZIFIER_H
 #define FL_WEIGHTEDDEFUZZIFIER_H
 
-#include "fl/defuzzifier/Defuzzifier.h"
+#include "src/Functions/fl/defuzzifier/Defuzzifier.h"
 
 namespace fl {
     class Activated;

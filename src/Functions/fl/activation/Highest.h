@@ -17,9 +17,9 @@
 #ifndef FL_HIGHEST_H
 #define FL_HIGHEST_H
 
-#include "fl/fuzzylite.h"
+#include "src/Functions/fl/fuzzylite.h"
 
-#include "fl/activation/Activation.h"
+#include "src/Functions/fl/activation/Activation.h"
 
 namespace fl {
 

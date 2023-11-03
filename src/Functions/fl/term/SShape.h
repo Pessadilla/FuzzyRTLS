@@ -17,7 +17,7 @@
 #ifndef FL_SSHAPE_H
 #define FL_SSHAPE_H
 
-#include "fl/term/Term.h"
+#include "src/Functions/fl/term/Term.h"
 
 namespace fl {
 

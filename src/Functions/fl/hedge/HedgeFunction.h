@@ -17,9 +17,9 @@
 #ifndef FL_HEDGEFUNCTION_H
 #define FL_HEDGEFUNCTION_H
 
-#include "fl/hedge/Hedge.h"
+#include "src/Functions/fl/hedge/Hedge.h"
 
-#include "fl/term/Function.h"
+#include "src/Functions/fl/term/Function.h"
 
 namespace fl {
 

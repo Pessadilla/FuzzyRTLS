@@ -17,7 +17,7 @@
 #ifndef FL_INPUTVARIABLE_H
 #define FL_INPUTVARIABLE_H
 
-#include "fl/variable/Variable.h"
+#include "src/Functions/fl/variable/Variable.h"
 
 namespace fl {
 

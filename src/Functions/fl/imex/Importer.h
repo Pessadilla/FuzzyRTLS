@@ -17,7 +17,7 @@
 #ifndef FL_IMPORTER_H
 #define FL_IMPORTER_H
 
-#include "fl/fuzzylite.h"
+#include "src/Functions/fl/fuzzylite.h"
 
 #include <string>
 

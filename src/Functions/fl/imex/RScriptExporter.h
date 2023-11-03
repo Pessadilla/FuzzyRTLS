@@ -17,8 +17,8 @@
 #ifndef FL_RSCRIPTEXPORTER_H
 #define FL_RSCRIPTEXPORTER_H
 
-#include "fl/imex/Exporter.h"
-#include "fl/imex/FldExporter.h"
+#include "src/Functions/fl/imex/Exporter.h"
+#include "src/Functions/fl/imex/FldExporter.h"
 
 #include <vector>
 

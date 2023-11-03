@@ -17,10 +17,10 @@
 #ifndef FL_RULE_H
 #define FL_RULE_H
 
-#include "fl/fuzzylite.h"
+#include "src/Functions/fl/fuzzylite.h"
 
-#include "fl/rule/Consequent.h"
-#include "fl/rule/Antecedent.h"
+#include "src/Functions/fl/rule/Consequent.h"
+#include "src/Functions/fl/rule/Antecedent.h"
 
 #include <map>
 #include <string>
