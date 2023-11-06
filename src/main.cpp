@@ -9,7 +9,7 @@
 #include "import_qml_plugins.h"
 
 #include "Functions/findcoordinate.h"
-#include "Functions/fuzzyexample.h"
+#include "Functions/fuzzymodule.h"
 
 int main(int argc, char *argv[])
 {
@@ -36,11 +36,11 @@ int main(int argc, char *argv[])
     double x2 = 5.0, y2 = 10.0, r2 = 6.56; // İkinci çember
     double x3 = 10.0, y3 = 5.0, r3 = 5.52; // Üçüncü çember
 
-
+    double triangleArea;
 
     FindCoordinate(x1,y1,r1,x2,y2,r2,x3,y3,r3);
 
-    fuzzyExample();
+    fuzzymodule(1.857);
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
