@@ -19,6 +19,8 @@ qt_add_executable(FuzzyRTLSApp src/main.cpp
     src/Functions/tsukamoto.h src/Functions/tsukamoto.cpp
     src/Functions/fuzzyexample.h src/Functions/fuzzyexample.cpp
     src/Functions/fuzzymodule.h src/Functions/fuzzymodule.cpp
+    src/Functions/rssitodistance.h src/Functions/rssitodistance.cpp
+    src/Functions/outputparser.h src/Functions/outputparser.cpp
 
 
 )

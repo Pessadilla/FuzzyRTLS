@@ -10,6 +10,7 @@
 
 #include "Functions/findcoordinate.h"
 #include "Functions/fuzzymodule.h"
+#include "Functions/outputparser.h"
 
 int main(int argc, char *argv[])
 {
@@ -40,11 +41,13 @@ int main(int argc, char *argv[])
 
     FindCoordinate(x1,y1,r1,x2,y2,r2,x3,y3,r3);
 
-    fuzzymodule(1.857);
+    fuzzymodule(1.827);
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
     }
+
+    OutputParser();
 
     return app.exec();
 }

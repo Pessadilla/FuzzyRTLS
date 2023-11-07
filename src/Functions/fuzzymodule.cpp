@@ -47,7 +47,8 @@ fuzzymodule::fuzzymodule(double triangle)
 
     std::cout << "Alan: " << area->getValue() << " - Dogruluk: "<< dogruluk->fuzzyOutputValue()  << std::endl;
     std::string asd = dogruluk->fuzzyOutputValue();
-    std::cout << "asd: "<< asd;
+    std::cout << "asd: "<< asd << std::endl;
+
 
     delete engine;
 
