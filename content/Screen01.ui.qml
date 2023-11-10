@@ -1,71 +1,126 @@
+
+
 /*
 This is a UI file (.ui.qml) that is intended to be edited in Qt Design Studio only.
 It is supposed to be strictly declarative and only uses a subset of QML. If you edit
 this file manually, you might introduce QML code that is not supported by Qt Design Studio.
 Check out https://doc.qt.io/qtcreator/creator-quick-ui-forms.html for details on .ui.qml files.
 */
-
 import QtQuick 6.2
 import QtQuick.Controls 6.2
 import FuzzyRTLS
+import QtQuick.Layouts
 
 Rectangle {
+
     id: rectangle
     width: Constants.width
     height: Constants.height
 
     color: Constants.backgroundColor
 
-    Button {
-        id: button
-        text: qsTr("Press me")
-        anchors.verticalCenter: parent.verticalCenter
-        checkable: true
-        anchors.horizontalCenter: parent.horizontalCenter
+    Rectangle {
+        id: rectangle1
+        x: 8
+        y: 8
+        width: 1200
+        height: 900
+        color: "#8ab7ff"
 
-        Connections {
-            target: button
-            onClicked: animation.start()
+        Rectangle {
+            id: rectangle2
+            x: 0
+            y: 880
+            width: 20
+            height: 20
+            color: "red"
+        }
+
+        Rectangle {
+            id: rectangle3
+            x: 980
+            y: 880
+            width: 20
+            height: 20
+            color: "red"
+        }
+
+        Rectangle {
+            id: rectangle4
+            x: 560
+            y: 300
+            width: 20
+            height: 20
+            color: "red"
+        }
+
+        Rectangle {
+            id: location
+            visible: false
+            x: 578
+            y: 514
+            width: 20
+            height: 20
+            color: "#18ff3b"
         }
     }
 
-    Text {
-        id: label
-        text: qsTr("Hello FuzzyRTLS")
-        anchors.top: button.bottom
-        font.family: Constants.font.family
-        anchors.topMargin: 45
-        anchors.horizontalCenter: parent.horizontalCenter
+    ColumnLayout {
+        x: 1567
+        y: 454
+        width: 116
+        height: 173
+        TextInput {
+            id: textInput
+            text: qsTr("RSSI1")
+            font.pixelSize: 17
+            horizontalAlignment: Text.AlignHCenter
+            mouseSelectionMode: TextInput.SelectCharacters
+            transformOrigin: Item.Center
+            maximumLength: 5
+            font.bold: false
+            Layout.preferredWidth: 80
+            Layout.preferredHeight: 20
+            onTextChanged: CommsManager.setText1 = textInput.text
+        }
 
-        SequentialAnimation {
-            id: animation
+        TextInput {
+            id: textInput1
+            text: qsTr("RSSI2")
+            font.pixelSize: 17
+            horizontalAlignment: Text.AlignHCenter
+            maximumLength: 5
+            Layout.preferredWidth: 80
+            Layout.preferredHeight: 20
+            onTextChanged: CommsManager.setText2 = textInput1.text
+        }
 
-            ColorAnimation {
-                id: colorAnimation1
-                target: rectangle
-                property: "color"
-                to: "#2294c6"
-                from: Constants.backgroundColor
+        TextInput {
+            id: textInput2
+            text: qsTr("RSSI3")
+            font.pixelSize: 17
+            horizontalAlignment: Text.AlignHCenter
+            maximumLength: 5
+            Layout.preferredWidth: 80
+            Layout.preferredHeight: 20
+            onTextChanged: CommsManager.setText3 = textInput2.text
+        }
+
+        Button {
+            id: button
+            text: qsTr("Locate")
+            Connections {
+                onClicked: {
+
+                }
             }
-
-            ColorAnimation {
-                id: colorAnimation2
-                target: rectangle
-                property: "color"
-                to: Constants.backgroundColor
-                from: "#2294c6"
-            }
+            checkable: false
         }
     }
     states: [
         State {
             name: "clicked"
             when: button.checked
-
-            PropertyChanges {
-                target: label
-                text: qsTr("Button Checked")
-            }
         }
     ]
 }

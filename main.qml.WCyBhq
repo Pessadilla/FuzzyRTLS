@@ -3,16 +3,18 @@ C++ project. */
 
 import QtQuick 6.2
 import QtQuick.Controls 6.2
+import CommsManager
 import QtQuick.Layouts
-
-
 Window {
-    width: 1920
-    height: 1080
+    width: mainScreen.width
+    height: mainScreen.height
 
     visible: true
     title: "FuzzyRTLS"
 
+    CommsManager{
+        textManager
+    }
 
     Rectangle {
 
@@ -84,6 +86,7 @@ Window {
                 font.bold: false
                 Layout.preferredWidth: 80
                 Layout.preferredHeight: 20
+                onTextChanged: CommsManager.setText1 = textInput.text
             }
 
             TextInput {
@@ -94,6 +97,7 @@ Window {
                 maximumLength: 5
                 Layout.preferredWidth: 80
                 Layout.preferredHeight: 20
+                onTextChanged: CommsManager.setText2 = textInput1.text
             }
 
             TextInput {
@@ -104,6 +108,7 @@ Window {
                 maximumLength: 5
                 Layout.preferredWidth: 80
                 Layout.preferredHeight: 20
+                onTextChanged: CommsManager.setText3 = textInput2.text
             }
 
             Button {
@@ -111,21 +116,11 @@ Window {
                 text: qsTr("Locate")
                 Connections {
                     onClicked: {
-                        commsObject.receiveTextInput(textInput.text, textInput1.text, textInput2.text)
-                        var text1 = commsObject.getText1();
-                        var text2 = commsObject.getText2();
-                        label.text = text1 + " " + text2;
-                        location.visible=true;
-                        location.x=commsObject.getText1()*100;
-                        location.y=880-(commsObject.getText2()*100);
+
                     }
                 }
                 checkable: false
             }
-            Label {
-                        id: label
-                        text: "Result will be shown here"
-                    }
         }
         states: [
             State {

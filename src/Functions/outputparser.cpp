@@ -4,17 +4,9 @@
 #include <sstream>
 #include <vector>
 
-//void parseOutput(const std::string& output, double& tutarsiz, double& cokDusuk, double& dusuk, double& normal, double& yuksek) {
+std::vector<std::string> OutputParser::ParseOutput(const std::string& output) {
 
-
-//}
-
-OutputParser::OutputParser()
-{
-
-    std::string data = "0.000/Tutarsiz + 0.000/CokDusuk + 0.000/Dusuk + 0.000/Normal + 0.286/Yuksek";
-
-    std::string input = "0.000/Tutarsiz + 0.000/CokDusuk + 0.000/Dusuk + 0.000/Normal + 0.286/Yuksek";
+    std::string input = output;
     std::istringstream iss(input);
     std::vector<std::string> tokens;
 
@@ -40,9 +32,18 @@ OutputParser::OutputParser()
         }
     }
 
-    for (const std::string& t : tokens) {
-        std::cout << t << std::endl;
-    }
+//    for (const std::string& t : tokens) {
+//        std::cout << t << std::endl;
+//    }
+
+    return tokens;
+
+}
+
+OutputParser::OutputParser()
+{
+
+
 
 }
 

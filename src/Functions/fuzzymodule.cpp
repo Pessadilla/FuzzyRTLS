@@ -6,7 +6,9 @@
 #include "src/Functions/fl/variable/InputVariable.h"
 #include "src/Functions/fl/variable/OutputVariable.h"
 
-fuzzymodule::fuzzymodule(double triangle)
+fuzzymodule::fuzzymodule(double triangle){}
+
+std::string fuzzymodule::fuzzyoutput(double triangle)
 {
     fl::Engine* engine = new fl::Engine;
 
@@ -45,11 +47,13 @@ fuzzymodule::fuzzymodule(double triangle)
 
     engine->process();
 
-    std::cout << "Alan: " << area->getValue() << " - Dogruluk: "<< dogruluk->fuzzyOutputValue()  << std::endl;
+//    std::cout << "Alan: " << area->getValue() << " - Dogruluk: "<< dogruluk->fuzzyOutputValue()  << std::endl;
     std::string asd = dogruluk->fuzzyOutputValue();
-    std::cout << "asd: "<< asd << std::endl;
+//    std::cout << "asd: "<< asd << std::endl;
 
 
     delete engine;
 
+    return asd;
 }
+
